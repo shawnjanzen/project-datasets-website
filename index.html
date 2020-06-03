@@ -33,6 +33,7 @@
 
 .btn:hover {
   background-color: #ffd520;
+  color: #ba0003;
 }
 
 .btn.active {
@@ -42,45 +43,322 @@
 </style>
 <body>
 
-<h2>Filter DIV Elements</h2>
+<h2>Project Datasets</h2>
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-  <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-  <button class="btn" onclick="filterSelection('animals')"> Animals</button>
-  <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
-  <button class="btn" onclick="filterSelection('colors')"> Colors</button>
-  <button class="btn" onclick="filterSelection('Justice')"> Criminal Justice</button>
-  <button class="btn" onclick="filterSelection('Employement')"> Employment</button>
+  <button class="btn" onclick="filterSelection('JusticeSecurity')"> Justice & Security</button>
+  <button class="btn" onclick="filterSelection('Employment')"> Employment</button>
   <button class="btn" onclick="filterSelection('Nonprofit')"> Nonprofit</button>
+  <button class="btn" onclick="filterSelection('Economy')"> Economy</button>
+  <button class="btn" onclick="filterSelection('Survey')"> Survey</button>
+  <button class="btn" onclick="filterSelection('Culture')"> Culture</button>
+  <button class="btn" onclick="filterSelection('US')"> United States</button>
+  <button class="btn" onclick="filterSelection('International')"> International</button>
+  <button class="btn" onclick="filterSelection('Food')"> Food</button>
+  <button class="btn" onclick="filterSelection('Entertainment')"> Entertainment</button>
+  <button class="btn" onclick="filterSelection('Health')"> Health</button>
+  <button class="btn" onclick="filterSelection('Technology')"> Technology</button>
+  <button class="btn" onclick="filterSelection('Industry')"> Industry</button>
+  <button class="btn" onclick="filterSelection('Entrepreneurship')"> Entrepreneurship</button>
+  <button class="btn" onclick="filterSelection('Maryland')"> Maryland</button>
+  <button class="btn" onclick="filterSelection('DisasterMgmt')"> Disaster Management</button>
+  <button class="btn" onclick="filterSelection('Government')"> Government</button>
+  <button class="btn" onclick="filterSelection('Education')"> Education</button>
+  <button class="btn" onclick="filterSelection('SocialIssues')"> Social Issues</button>
+  <button class="btn" onclick="filterSelection('FamilyChildren')"> Family & Children</button>
+  <button class="btn" onclick="filterSelection('Policy')"> Policy</button>
+  <button class="btn" onclick="filterSelection('CrowdSourcing')"> Crowd-sourcing</button>
+  <button class="btn" onclick="filterSelection('Sports')"> Sports</button>
+  <button class="btn" onclick="filterSelection('Historical')"> Historical Data</button>
 </div>
 
 <div class="container">
-  <div class="filterDiv cars">
-  	<p><strong>BMW</strong></p>
-    <p>Words go here</p>
-      <ul>
-    	<li>Item 1</li>
-        <li>Item 2</li>
-      </u>
-  </div>
-  <div class="filterDiv colors fruits"><p>Orange</p></div>
-  <div class="filterDiv cars"><p>Volvo</p></div>
-  <div class="filterDiv colors"><p>Red</p></div>
-  <div class="filterDiv cars animals"><p>Mustang</p></div>
-  <div class="filterDiv colors"><p>Blue</p></div>
-  <div class="filterDiv animals"><p>Cat</p></div>
-  <div class="filterDiv animals"><p>Dog</p></div>
-  <div class="filterDiv fruits"><p>Melon</p></div>
-  <div class="filterDiv fruits animals"><p>Kiwi</p></div>
-  <div class="filterDiv fruits"><p>Banana</p></div>
-  <div class="filterDiv fruits"><p>Lemon</p></div>
-  <div class="filterDiv animals"><p>Cow</p></div>
-    <div class="filterDiv Survey Culture Safety Economy Opinions"><p>2016 General Social Survey (GSS)</p></div>
-  <div class="filterDiv Health Technology Employment Nonprofit">OSMI 2018 Mental Health in Tech Survey</div>
-  <div class="filterDiv Entertainment Technology Industry">Video game sales</div>
-  <div class="filterDiv Industry Entrepreneurship Entertainment">IMDB Movie Data</div>
-  <div class="filterDiv Safety Justice SocialJustice Nonprofit">Baltimore Police Department on arrests from January 1, 2018 to March 18, 2018</div>
+    <div class="filterDiv Survey Culture Security Economy Employment Technology US Health Industry Government Education SocialIssues FamilyChildren Historical">
+    	<p><strong>2016 General Social Survey (GSS)</strong></p>
+       	<ul>
+           	<li>Data Tags: Survey, Culture, Security, Economy, United States, Employment, Technology, Industry, Family & Children, Historical Data</li>
+			<li>We use this data periodically for class exercises.   The GSS survey includes a vast range of topics and represents all people living in the US.  You can use this data to develop numerous questions and research ideas.</li>
+			<li>ELMS link to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/2016%20General%20Social%20Survey%20(GSS)</li>
+			<li>Check out the GSS online variable search tool: https://gssdataexplorer.norc.org/variables/vfilter (Links to an external site.)</li>
+			<li>Potential clients very widely--be creative.</li>
+        <ul>    
+    </div>
+    
+    <div class="filterDiv JusticeSecurity US SocialIssues">
+    <p><strong>Fatal Force 2015-2020</strong></p>
+    <ul>
+        <li>Data tags: Justice & Security, United States</li>
+        <li>"The Washington Post is compiling a database of every fatal shooting in the United States by a police officer in the line of duty since Jan. 1, 2015. [...] In 2015, The Post began tracking more than a dozen details about each killing — including the race of the deceased, the circumstances of the shooting, whether the person was armed and whether the victim was experiencing a mental-health crisis — by culling local news reports, law enforcement websites and social media and by monitoring independent databases such as Killed by Police and Fatal Encounters.  [...] only those shootings in which a police officer, in the line of duty, shot and killed a civilian [...] The FBI and the Centers for Disease Control and Prevention log fatal shootings by police, but officials acknowledge that their data is incomplete. In 2015, The Post documented more than two times more fatal shootings by police than had been recorded by the FBI. Last year, the FBI announced plans to overhaul how it tracks fatal police encounters." (Washington Post Github)</li>
+        <li>ELMS Links to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/Police%20Violence%20(multiple%20datasets)/Fatal%20Force%20(Washington%20Post)</li>
+        <li>Learn more about this data, its methods, and more</li>
+            <ul>
+                <li>https://www.washingtonpost.com/graphics/2019/national/police-shootings-2019/</li>
+                <li>https://github.com/washingtonpost/data-police-shootings</li>
+            </ul>
+        <li>Potential Clients for Police Violence (any dataset)</li>
+            <ul>
+                <li>Race Forward [formerly the Center for Social Inclusion] (https://www.raceforward.org/)</li>
+                <li>Color of Change (https://colorofchange.org/) </li>
+                <li>National Police Accountability Project (https://www.nlg-npap.org/)</li>
+                <li>Any group interested in racial equity.  Check this site for an organization search: http://www.racialequityresourceguide.org/organizations/organizations/state/9426C050-73D6-11E3-A4B60050569A5318</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv JusticeSecurity US SocialIssues Historical">
+    <p><strong>Mapping Police Violence data 2013 - 2019</strong></p>
+    <ul>
+        <li>Data tags: Justice & Security, US, Historical Data</li>
+        <li>"We believe the data represented on this site is the most comprehensive accounting of people killed by police since 2013. [...] This information has been meticulously sourced from the three largest, most comprehensive and impartial crowdsourced databases on police killings in the country: FatalEncounters.org, the U.S. Police Shootings Database and KilledbyPolice.net. We've also done extensive original research to further improve the quality and completeness of the data; searching social media, obituaries, criminal records databases, police reports and other sources to identify the race of 90 percent of all victims in the database." (Mapping Police Violence website)</li>
+        <li>ELMS Links to data files:
+            $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/Police%20Violence%20(multiple%20datasets)/Mapping%20Police%20Violence</li>
+        <li>Learn more about this dataset and definitions & measurements for data at: https://mappingpoliceviolence.org/aboutthedata</li>
+        <li>Potential Clients for Police Violence (any dataset)</li>
+            <ul>
+                <li>Race Forward [formerly the Center for Social Inclusion] (https://www.raceforward.org/)</li>
+                <li>Color of Change (https://colorofchange.org/) </li>
+                <li>National Police Accountability Project (https://www.nlg-npap.org/)</li>
+                <li>Any group interested in racial equity.  Check this site for an organization search: http://www.racialequityresourceguide.org/organizations/organizations/state/9426C050-73D6-11E3-A4B60050569A5318</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv JusticeSecurity US SocialIssues Historical">
+    <p><strong>Hate Crimes tracked by the FBI from 1991 to 2018</strong></p>
+    <ul>
+        <li>Data tags: Justice & Security, US, Historical Data</li>
+        <li>"For more than two decades, thousands of city, county, college and university, state, tribal, and federal law enforcement agencies have voluntarily submitted data to the UCR Hate Crime Statistics Program on crimes motivated by prejudice based on race, gender and gender identity, religion, disability, sexual orientations, or ethnicity. While facts and figures cannot convey the suffering experienced by victims of hate crimes, they demonstrate the dedication and commitment of the law enforcement community to recognize and document crimes that are prompted by hate." (FBI source: https://www.fbi.gov/services/cjis/ucr/hate-crime (Links to an external site.))</li>
+        <li>ELMS Links to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/Hate%20Crimes%20(FBI%201991-2018)</li>
+        <li>Learn more about this data, its methods, and more</li>
+            <ul>
+                <li>https://www.fbi.gov/services/cjis/ucr/hate-crime)</li>
+                <li>https://crime-data-explorer.fr.cloud.gov/downloads-and-docs)</li>
+                <li>https://ucr.fbi.gov/hate-crime)</li>
+            </ul>
+        <li>Potential Clients</li>
+            <ul>
+                <li>50 States Against Hate program with the Anti-Defamation League (https://www.adl.org/50statesagainsthate)</li>
+                <li>Human Rights Campaign (https://www.hrc.org/) </li>
+                <li>National Coalition for the Homeless (https://nationalhomeless.org/campaigns/hate-crimes/)</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv JusticeSecurity, Maryland">
+    <p><strong>Baltimore Police Department on arrests</strong></p>
+    <ul>
+        <li>Data Tags: Justice & Security, Nonprofit, Maryland</li>
+        <li>Baltimore Police Department on arrests from January 1, 2018 to March 18, 2018: https://www.baltimorepolice.org/crime-stats/open-data (Links to an external site.)</li>
+        <li>This particular data has few variables and some have many category options.  This will likely require some interesting subsets, recoding into larger groups, or constructing new novel variables.</li>
+        <li>ELMS link to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/Baltimore%20Police%20Arrests%20(2018%2C%20Jan%201%20to%20Mar%2018)</li>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>Maryland Alliance for Justice Reform (MAJR) is a bipartisan, statewide alliance seeking legislative changes in Maryland’s correctional policies to support alternatives to incarceration, address inequities, and aid citizens returning from prison to lead productive lives, thus, strengthening families and communities." https://www.ma4jr.org/who-we-are/</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv Health DisasterMgmt JusticeSecurity US Historical">
+    <p><strong>COVID-19 in US by Country, State, & County from the NY Times</strong></p>
+    <ul>
+        <li>Dataset Tags: Health, Disaster Management, Justice & Security, United States, Historical Data</li>
+        <li>"The New York Times is releasing a series of data files with cumulative counts of coronavirus cases in the United States, at the state and county level, over time. We are compiling this time series data from state and local governments and health departments in an attempt to provide a complete record of the ongoing outbreak. Since late January [2020], The Times has tracked cases of coronavirus in real time as they were identified after testing. Because of the widespread shortage of testing, however, the data is necessarily limited in the picture it presents of the outbreak." (New Times Github)</li>
+        <li>ELMS links to files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/COVID-19%20(multiple%20datasets)/US%20(from%20the%20NY%20Times)</li>
+        <li>Learn more about this dataset: https://github.com/nytimes/covid-19-data</li>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>Feeding America (https://www.feedingamerica.org/)</li>
+                <li>Team Rubicon (https://teamrubiconusa.org/neighbors/)</li>
+                <li>Doctors Without Borders (https://www.doctorswithoutborders.org/)</li>
+                <li>The World Health Organization (https://www.who.int/emergencies/diseases/novel-coronavirus-2019)</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv Health DisasterMgmt JusticeSecurity International Historical">
+    <p><strong>COVID-19 Worldwide from the European Center for Disease Control</strong></p>
+    <ul>
+        <li>Dataset Tags: Health, Disaster Management, Justice & Security, International, Historical Data</li>
+        <li>"Geographic distribution of COVID-19 cases worldwide. [...] Updated daily and contains the latest available public data on COVID-19 [as of 1 June 2020]. Each row/entry contains the number of new cases reported per day and per country." (From the European Center for Disease Control [ECDC] website)</li>
+        <li>ELMS links to files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/COVID-19%20(multiple%20datasets)/Worldwide%20(from%20the%20ECDC)</li>
+        <li>This dataset in ELMS is from 1 June 2020, but the ECDC provided the following guidance to load this data directly from their website which may provide more up-to-date data. The following is R code:
+            <span style="font-family:monospace;">
+            <br />#these libraries need to be loaded
+            <br />library(utils)
+            <br />#read the Dataset sheet into “R”. The dataset will be called "data".
+            <br />data <- read.csv("https://opendata.ecdc.europa.eu/covid19/casedistribution/csv", na.strings = "", fileEncoding = "UTF-8-BOM")</li>
+            </span>
+        <li>Learn more about this dataset:</li>
+            <ul>
+                <li>https://www.ecdc.europa.eu/en/publications-data/download-todays-data-geographic-distribution-covid-19-cases-worldwide</li>
+                <li>https://www.ecdc.europa.eu/en/covid-19/data-collection</li>
+                <li>https://data.europa.eu/euodp/en/data/dataset/covid-19-coronavirus-data</li>
+            </ul>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>Feeding America (https://www.feedingamerica.org/)</li>
+                <li>Team Rubicon (https://teamrubiconusa.org/neighbors/)</li>
+                <li>Doctors Without Borders (https://www.doctorswithoutborders.org/)</li>
+                <li>The World Health Organization (https://www.who.int/emergencies/diseases/novel-coronavirus-2019)</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv Health Industry Technology Employment Nonprofit Survey">
+    <p><strong>OSMI 2018 Mental Health in Tech Survey</strong></p>
+    <ul>
+        <li>Data Tags: Health, Industry, Technology, Employment, Nonprofit, Survey</li>
+        <li>Data comes from a regular survey of technology professionals' mental health conducted by OSMI; OSMI is a "non-profit, 501(c)(3) corporation dedicated to raising awareness, educating, and providing resources to support mental wellness in the tech and open source communities."  https://osmihelp.org/about/about-osmi</li>
+        <li>ELMS link to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/2018%20Mental%20Health%20in%20Tech%20Survey%20(OSMI) </li>
+        <li>Dataset source links:</li>
+            <ul>
+                <li>https://osmihelp.org/research/ </li>
+                <li>https://www.kaggle.com/osmihelp/osmi-mental-health-in-tech-survey-2018</li>
+                <li>If interested, there are other years of this data on the OSMI website.</li>
+            </ul>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>Open Source Mental Illness (OSMI)</li>
+                <li>National Alliance on Mental Illness (NAMI) (https://www.nami.org/Home)</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv Entertainment Technology Industry International">
+    <p><strong>Video game sales from more than 16,500 games</strong></p>
+    <ul>
+        <li>Data Tags: Entertainment, Technology, Industry, International</li>
+        <li>Video game sales from more than 16,500 games: https://www.kaggle.com/gregorut/videogamesales.  Data was originally scraped from VGChartz: https://www.vgchartz.com/gamedb/</li>
+        <li>ELMS link to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/Video%20Game%20Sales%20(as%20of%20Oct%202016)</li>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>Metacritc - Video Games Division: See https://www.metacritic.com/game and https://www.metacritic.com/about-metacritic</li>
+                <li>Trying to frame this for consulting? https://kotaku.com/im-a-video-game-consultant-and-this-is-what-i-do-1634016262</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv Industry Entrepreneurship Entertainment International US Historical">
+    <p><strong>IMDB Movie Data</strong></p>
+    <ul>
+        <li>Data Tags: Industry, Entrepreneurship, Entertainment, International, US, Historical Data</li>
+        <li>Scraped movie data from IMDB.</li>
+            <ul>
+                <li>https://byungjun0689.github.io/3.-IMDB-5000-movie-datasets/ </li>
+                <li>http://rstudio-pubs-static.s3.amazonaws.com/342210_7c8d57cfdd784cf58dc077d3eb7a2ca3.html</li>
+            </ul>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>US movie production companies such as: Warner Bros, Columbia Pictures, Dreamworks, 20th Century Fox, IFC Films, Lucasfilm, Paramount Pictures</li>
+                <li>Any movie or entertainment group interested in film research.</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv JusticeSecurity Government Education SocialIssues">
+    <p><strong>Campus Safety and Security 2014 - 2016</strong></p>
+    <ul>
+        <li>Data Tags: Justice & Security, Government, Education, Social issues</li>
+        <li>Campus Safety and Security 2014 - 2016 from the US Department of Education</li>
+        <li>This data spans nearly 30 data files, each focusing on specific safety & security issues, such as assault, hate crimes, and residence hall fires.  By the nature of these being things institutions will want to minimize, do not be surprised that most institutions will not have any data--although non-events are also interesting.  You want the challenge you could source data from across the data files to get a more comprehensive look at a school or group of schools.</li>
+        <li>ELMS link to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/Campus%20Safety%20%26%20Security%202014-2016%20(US%20DoEd)</li>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>College Drinking - Changing the Culture: "Developed by the National Institute on Alcohol Abuse and Alcoholism (NIAAA), College Drinking: Changing the Culture is a resource for comprehensive research-based information on issues related to alcohol abuse and binge drinking among college students, with online tools for parents, students, administrators and more." https://www.nccpsafety.org/resources/affiliates-alpha/P10/P40 (Links to an external site.)</li>
+                <li>Anti-Violence Project (AVP): "AVP empowers lesbian, gay, bisexual, transgender, queer, and HIV-affected communities and allies to end all forms of violence through organizing and education, and supporting survivors through counseling and advocacy. AVP provides direct services such as immediate crisis intervention, safety planning, short or long-term counseling, police, court and social services advocacy and accompaniment, information and referrals to anyone who calls their hotline or comes to their main offices or intake sites throughout the five boroughs of New York."  https://www.nccpsafety.org/resources/affiliates-alpha/P10 (Links to an external site.)</li>
+                <li>American College Counseling Association (ACCA): "ACCA is an Association for those persons in higher education to include colleges, universities, community and technical college settings, whose professional identity is counseling and whose purpose is fostering students’ development. ACCA strives to support and enhance the practice of college counseling, to promote ethical and responsible professional practice, to promote communication and exchange among college counselors across service areas and institutional settings, to encourage cooperation with other organizations related to higher education and college student development, and to provide leadership and advocacy for the profession of counseling in higher education." https://www.nccpsafety.org/resources/affiliates-alpha/P10 (Links to an external site.)</li>
+                <li>You can choose other potential clients from this extensive listing: https://www.nccpsafety.org/resources/affiliates/</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv FamilyChildren Education Policy">
+    <p><strong>2016 Early Childhood Program Participation</strong></p>
+    <ul>
+        <li>Data tags: Family & Children, Education, Policy</li>
+        <li>2016 Early Childhood Program Participation (ECPP) by the Institute for Education Sciences' National Center for Education Statistics.</li>
+        <li>Like the GSS, this is a rather large dataset and will require navigating a codebook.  View the ECPP codebook online (Choose ECPP and Survey variables from the drop list): https://nces.ed.gov/OnlineCodebook/Session/Codebook/cd9eb012-38f2-4fe3-90b8-b7113968ea29</li>
+        <li>ELMS link to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/2016%20Early%20Childhood%20Program%20Participation%20(ECPP)%20(IES%20NCES)</li>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>National Association for the Education of Young Children (NAEYC). The NAYEC has almost 80,000 members with a national network of 300 affiliates. Dedicated to working in behalf of children through 8 years of age, NAEYC sets the standards for programs and teachers involved in early childhood education. With its large membership and clout they are able to influence the government's policy direction on matters pertaining to early childhood education such as funding for early childhood programs, the Elementary and Secondary Education Act, and the re-authorization of the Child Care & Development Block Grant.  NAEYC sets the standards and norms for early childhood education programs and issues the proper accreditation to programs meeting these standards."  http://www.teach-nology.com/teachers/early_education/organizations/</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv Food Industry Economy US">
+    <p><strong>Avocado Sales</strong></p>
+    <ul>
+        <li>Data Tags: Food, Industry, Economy, US</li>
+        <li>Avocado Prices 2015 - 2018, from the Hass Avocado Board, https://www.kaggle.com/neuromusic/avocado-prices</li>
+        <li>ELMS link to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/Avocado%20prices%202015-2018</li>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>Hass Avocado Board: "The Hass Avocado Board (https://hassavocadoboard.com/) is an agriculture promotion group established in 2002 to promote the consumption of Hass Avocados in the United States. A 12-member board representing domestic producers and importers of Hass Avocados directs HAB’s promotion, research and information programs under supervision of the United States Department of Agriculture. Funding for HAB comes from Hass avocado producers and importers in the United States.  HassAvocadoBoard.com is the essential online resource for the Hass Avocado industry (Links to an external site.) providing timely relevant data and research for the domestic producers and importers it represents."  http://www.hassavocadoboard.com/about (Links to an external site.)</li>
+                <li>The Kaggle account hosting this info claims inspiration from these questions:</li>
+                    <ul>
+                        <li>In which cities can millenials have their avocado toast AND buy a home?</li>
+                        <li>Was the Avocadopocalypse of 2017 real?</li>
+                    </ul>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv Industry Entrepreneurship Economy Technology Entertainment CrowdSourcing">
+    <p><strong>Kickstarter Projects</strong></p>
+    <ul>
+        <li>Data Tags: Industry, Entrepreneurship, Economy, Technology, Entertainment, Crowd-sourcing</li>
+        <li>Kickstarter Projects 2016 and 2018</li>
+        <li><i>This data comes in two year files, both of which exceed 300,000 observations.  Depending on your computer resources, this data in full may cause your computer to lag.  You may want to subset the data to focus on specific areas of Kickstarter data.</i></li>
+        <li>ELMS link to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/Kickstarter%20Projects%202016%20%26%202018</li>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>Angel List: "Angel List is a U.S. website for startups, angel investors, and job-seekers looking to work at startups. Created in 2010, the platform has a mission to democratize the investment process and to help startups with their challenges in fundraising and talent." https://en.wikipedia.org/wiki/AngelList</li>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv Sports Historical International">
+    <p><strong>Olympic Event History</strong></p>
+    <ul>
+        <li>Data Tags: Sports, Historical Data, International</li>
+        <li>120 years of Olympic history: athletes and results</li>
+        <li>"This is a historical dataset on the modern Olympic Games, including all the Games from Athens 1896 to Rio 2016. ... scraped from www.sports-reference.com in May 2018. Note that the Winter and Summer Games were held in the same year up until 1992. After that, they staggered them such that Winter Games occur on a four year cycle starting with 1994, then Summer in 1996, then Winter in 1998, and so on. A common mistake people make when analyzing this data is to assume that the Summer and Winter Games have always been staggered."  https://www.kaggle.com/heesoo37/120-years-of-olympic-history-athletes-and-results/home</li>
+        <li><i>The athletes file has more than 200,000 observations and may slow your computer if you do not have sufficient resources.</i></li>
+        <li>ELMS link to data files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/Olympic%20data%20(1896%20to%202016)</li>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>BBC News or NBC News</li>
+                    <ul>
+                        <li>These stations cover the Olympics extensively and may be interested in novel findings to include with their media posts.  They would be of particular interest to findings that challenge norms, new breakthroughs (and outliers), and hard-to-break trends.  Feel free to use any news agency in place of the BBC or NBC.</li>
+                        <li>BBC News: https://www.bbc.com/sport/olympics</li>
+                        <li>NBC News: https://www.nbcolympics.com/</li>
+                        <li>Not sure how a company might use this? https://www.journalism.co.uk/news/how-newsrooms-covered-the-winter-olympics-2018-with-interactives-and-data-visualisations/s2/a718323/</li>
+                    </ul>
+            </ul>
+    </ul>
+</div>
+
+<div class="filterDiv Sports HistoricalData">
+    <p><strong>NFL Combine</strong></p>
+    <ul>
+        <li>Dataset Tags: Sports, Historical Data</li>
+        <li>NFL Combine data 1987 - 2018 by Sports Viz Sunday</li>
+        <li>"The NFL Combine is an event for players who wish to be drafted perform in a variety of athletic events, the results of which can be used in in decisions about who to draft. [...] Sports Viz Sunday is an initiative to encourage the creation and sharing of sports themed visualizations, run by James Smith, Simon Beaumont (both UK) & Spencer Baucke (US)." (Sports Viz Sunday)</li>
+        <li>ELMS links to files: $CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$$CANVAS_COURSE_REFERENCE$/files/folder/datasets/_data_for_projects/NFL%20Combine%20(1987%20to%202018)</li>
+        <li>Learn more about this dataset:</li>
+            <ul>
+                <li>https://data.world/sportsvizsunday/nfl-combine-data</li>
+                <li>https://data.world/sportsvizsunday</li>
+            </ul>
+        <li>Potential Clients:</li>
+            <ul>
+                <li>NFL Foundation (https://www.nflfoundation.org/)</li>
+                <li>NFL and their Big Data Bowl (https://operations.nfl.com/the-game/big-data-bowl/)</li>
+                <li>List of additional Data Companies using sports data for real-time predictions and other analytics (https://builtin.com/big-data/big-data-companies-sports)</li>
+            </ul>
+    </ul>
 </div>
 
 <script>
